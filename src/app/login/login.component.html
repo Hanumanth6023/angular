@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<h1 class="login">Login</h1>
+
+<div class="container">
+    <div clas="row">
+    <form #login1="ngForm" (submit)="login(login1.value)">
+    <label for="emailid">EmailId</label>
+    <input type="email" name="emailid" id="email" required ngModel ><br>
+    <label for="pass">Password</label>
+    <input type="password" name="password" id="password" required ngModel ><br>
+    <input type="submit" value="Login" [disabled]="!login1.form.valid">
+    <input type="reset" value="reset"><br>
+
+
+    </form>
+    </div>
+    </div>
+    <p [ngStyle]="{'color':prop}">{{mess}}</p>

@@ -1,0 +1,8 @@
+<p>HANUMANTH</p>
+
+<input type="text" #text>|
+<button (click)="send(text.value)">send</button>
+<h3>{{msg}}</h3>
+<ul>
+<li *ngFor="let item of msg">{{item}}</li>
+</ul>
